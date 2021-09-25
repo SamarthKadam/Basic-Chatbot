@@ -26,12 +26,12 @@ body{
     flex-flow: column;
     background-color: rgb(250,250,255);
 }
-/* .content::-webkit-scrollbar{
+.content::-webkit-scrollbar{
     width: 0px;
 }
 .content::-webkit-scrollbar-thumb{
     background-color: transparent;
-} */
+}
 input[type="text"]{
     border: solid 0;
     height: 40px;
@@ -163,7 +163,8 @@ border-bottom: 10px solid rgb(230, 230, 238);
     box-sizing: border-box;
     padding: 6px 12px;
     display: inline-block;
-    margin: 7px 7px;
+    /* margin: 7px 7px; */
+    margin: 7px 30px 7px 7px;
     border-radius: 10px;
     background-color: #ebebeb;
 
@@ -175,6 +176,11 @@ border-bottom: 10px solid rgb(230, 230, 238);
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.madi{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .user{
     position: relative;
@@ -225,6 +231,7 @@ border-bottom: 10px solid #ebebeb;
     animation-duration: 2s;
     animation-delay: .8s;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     animation-timing-function: linear;
 }
 @keyframes change{
@@ -235,3 +242,4 @@ border-bottom: 10px solid #ebebeb;
         background-color: #969A9B;
     }
 }
+/* small changes done inside lets see if git can detect it */
